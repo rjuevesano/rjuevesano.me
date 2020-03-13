@@ -1,0 +1,112 @@
+@import url("custom-fonts.css");
+
+#thumbs {
+  margin: 0;
+  padding: 0;
+}
+
+#thumbs li {
+  list-style-type: none;
+}
+
+.item-thumbs {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  width: 100%;
+  height: 200px;
+}
+
+.item-thumbs a + img {
+  width: 100%;
+}
+
+.item-thumbs .hover-wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 450ms ease-out 0s;
+  -moz-transition: all 450ms ease-out 0s;
+  -o-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  -moz-transform: rotateY(180deg) scale(0.5, 0.5);
+  -ms-transform: rotateY(180deg) scale(0.5, 0.5);
+  -o-transform: rotateY(180deg) scale(0.5, 0.5);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.item-thumbs:hover .hover-wrap,
+.item-thumbs.active .hover-wrap {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  -moz-transform: rotateY(0deg) scale(1, 1);
+  -ms-transform: rotateY(0deg) scale(1, 1);
+  -o-transform: rotateY(0deg) scale(1, 1);
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.item-thumbs .hover-wrap .overlay-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.item-thumbs .hover-wrap .overlay-img-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1em;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.span4 {
+  width: 300px;
+}
+
+/* portfolio */
+.item-thumbs .hover-wrap .overlay-img {
+  background: #bd5d38;
+}
+
+/* fancybox */
+.fancybox-close:hover {
+  background-color: #bd5d38;
+}
+.fancybox-nav:hover span {
+  background-color: #bd5d38;
+}
+
+@media (min-width: 1200px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+  .span4 {
+    width: 370px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+  .span4 {
+    width: 228px;
+  }
+}

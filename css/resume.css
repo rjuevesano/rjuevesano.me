@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+@import url("custom-fonts.css");
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
@@ -173,4 +174,104 @@ a {
 
 a:hover, a:focus, a:active {
   color: #824027;
+}
+
+#thumbs {
+  margin: 0;
+  padding: 0;
+}
+
+#thumbs li {
+  list-style-type: none;
+}
+
+.item-thumbs {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
+}
+
+.item-thumbs a + img {
+  width: 100%;
+}
+
+.item-thumbs .hover-wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 450ms ease-out 0s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.item-thumbs:hover .hover-wrap,
+.item-thumbs.active .hover-wrap {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.item-thumbs .hover-wrap .overlay-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.item-thumbs .hover-wrap .overlay-img-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1em;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.span4 {
+  width: 300px;
+}
+
+/* portfolio */
+.item-thumbs .hover-wrap .overlay-img {
+  background: #bd5d38;
+}
+
+/* fancybox */
+.fancybox-close:hover {
+  background-color: #bd5d38;
+}
+
+.fancybox-nav:hover span {
+  background-color: #bd5d38;
+}
+
+@media (min-width: 1200px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+  .span4 {
+    width: 370px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+  .span4 {
+    width: 228px;
+  }
 }
