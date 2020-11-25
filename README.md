@@ -5,6 +5,7 @@
 ## Preview
 
 [![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frjuevesano%2Frjuevesano.me.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frjuevesano%2Frjuevesano.me?ref=badge_shield)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
@@ -66,3 +67,6 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frjuevesano%2Frjuevesano.me.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frjuevesano%2Frjuevesano.me?ref=badge_large)
